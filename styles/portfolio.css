@@ -10,6 +10,7 @@
   --accent-color-b: #f82d0e;
   --accent-color-c: #040404;
   --default-font-family: HelveticaLTPro-Roman;
+  --font-bold: HelveticaLTPro-Bold;
   --header-font-size-xl: 4.768rem;
   --header-font-size-large: 1.953rem;
   --header-font-size-medium: 1.563rem;
@@ -18,34 +19,66 @@
 }
 
 body {
-  font-family: var(--default-font-family);
   background-color: var(--bg-color-b);
-}
-
-.hero {
+  font-family: var(--default-font-family);
+  color: var(--accent-color-c);
   padding: 30px;
 }
-.hero h1 {
+
+h1 {
   font-size: var(--header-font-size-medium);
   text-transform: uppercase;
-  color: var(--accent-color-c);
 }
-.hero h2 {
+h2 {
   font-size: var(--header-font-size-xl);
-  font-family: HelveticaLTPro-Bold;
+  font-family: var(--font-bold);
   line-height: 0.98;
-  color: var(--accent-color-c);
 }
-.hero p {
+h3 {
+  font-size: var(--header-font-size-medium);
+  font-family: var(--font-bold);
+  text-transform: uppercase;
+}
+.hero h3 {
   font-size: var(--header-font-size-small);
-  font-family: HelveticaLTPro-Bold;
+  font-family: var(--font-bold);
   text-transform: uppercase;
   padding-top: 30px;
   color: var(--accent-color-a);
 }
+h3.project-number {
+  color: var(--accent-color-a);
+  padding-right: 4px;
+}
 
+p {
+  font-size: var(--body-font-size);
+}
 hr {
   color: var(--accent-color-c);
   opacity: 100;
   display: block;
+}
+
+.btn-branding {
+  border: var(--accent-color-c) solid 1px;
+  border-radius: 0;
+  font-size: var(--body-font-size);
+  line-height: 1;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 12px;
+}
+
+.project-container {
+  margin: 0;
+  padding: 0;
+}
+
+.project-description {
+  padding-top: 8px;
+}
+
+img {
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
 }
