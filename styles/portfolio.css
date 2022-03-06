@@ -6,10 +6,15 @@
 :root {
   --bg-color-a: #f1f1ef;
   --bg-color-b: #fffdfa;
-  --accent-color-a: #909090;
+  --accent-color-a: #a7a6a6;
   --accent-color-b: #f82d0e;
   --accent-color-c: #040404;
   --default-font-family: HelveticaLTPro-Roman;
+  --header-font-size-xl: 4.768rem;
+  --header-font-size-large: 1.953rem;
+  --header-font-size-medium: 1.563rem;
+  --header-font-size-small: 1.25rem;
+  --body-font-size: 1 rem;
 }
 
 body {
@@ -21,20 +26,26 @@ body {
   padding: 30px;
 }
 .hero h1 {
-  font-size: 2rem;
+  font-size: var(--header-font-size-medium);
   text-transform: uppercase;
   color: var(--accent-color-c);
 }
 .hero h2 {
-  font-size: 5rem;
+  font-size: var(--header-font-size-xl);
   font-family: HelveticaLTPro-Bold;
   line-height: 0.98;
   color: var(--accent-color-c);
 }
 .hero p {
-  font-size: 1.25rem;
+  font-size: var(--header-font-size-small);
   font-family: HelveticaLTPro-Bold;
   text-transform: uppercase;
   padding-top: 30px;
   color: var(--accent-color-a);
+}
+
+hr {
+  color: var(--accent-color-c);
+  opacity: 100;
+  display: block;
 }
