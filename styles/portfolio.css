@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "CallingCodeRegular";
+  src: local("CallingCode-Regular.otf") format("opentype");
+}
+
+body {
+  font-family: CallingCode-Regular;
+}
