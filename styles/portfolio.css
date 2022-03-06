@@ -1,17 +1,10 @@
-@font-face {
-  font-family: "HelveticaLTPro";
-  src: local("☺︎");
-  src: url("HelveticaLTPro-Roman") format("opentype"),
-    url("HelveticaLTPro-Bold") format("opentype");
-}
 :root {
   --bg-color-a: #f1f1ef;
   --bg-color-b: #fffdfa;
   --accent-color-a: #a7a6a6;
   --accent-color-b: #f82d0e;
   --accent-color-c: #040404;
-  --default-font-family: HelveticaLTPro-Roman;
-  --font-bold: HelveticaLTPro-Bold;
+  --default-font-family: "Public Sans", sans-serif;
   --header-font-size-xl: 4.768rem;
   --header-font-size-large: 1.953rem;
   --header-font-size-medium: 1.563rem;
@@ -32,17 +25,17 @@ h1 {
 }
 h2 {
   font-size: var(--header-font-size-xl);
-  font-family: var(--font-bold);
+  font-weight: 600;
   line-height: 0.98;
 }
 h3 {
   font-size: var(--header-font-size-medium);
-  font-family: var(--font-bold);
+  font-weight: 600;
   text-transform: uppercase;
 }
 .hero h3 {
   font-size: var(--header-font-size-small);
-  font-family: var(--font-bold);
+  font-weight: 600;
   text-transform: uppercase;
   padding-top: 30px;
   color: var(--accent-color-a);
