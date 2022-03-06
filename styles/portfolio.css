@@ -3,10 +3,33 @@
   src: local("HelveticaLTPro-Roman") format("opentype");
   src: local("HelveticaLTPro-Bold") format("opentype");
 }
-body {
-  font-family: HelveticaLTPro-Bold;
+:root {
+  --bg-color-a: #f1f1ef;
+  --bg-color-b: #fffdfa;
+  --accent-color-a: #6b6b6b;
+  --accent-color-b: #f82d0e;
+  --default-font-family: HelveticaLTPro-Roman;
 }
 
-h1 {
-  font-size: 5.1rem;
+body {
+  font-family: var(--default-font-family);
+  background-color: var(--bg-color-b);
+}
+
+.hero {
+  padding: 30px;
+}
+.hero h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.hero h2 {
+  font-size: 5rem;
+  font-family: HelveticaLTPro-Bold;
+  line-height: 0.98;
+}
+.hero p {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding-top: 60px;
 }
