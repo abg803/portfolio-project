@@ -30,6 +30,8 @@ body {
 }
 .hero p {
   font-size: 1.5rem;
+  font-family: HelveticaLTPro-Bold;
   text-transform: uppercase;
-  padding-top: 60px;
+  padding-top: 30px;
+  color: var(--accent-color-a);
 }
