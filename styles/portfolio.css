@@ -1,8 +1,12 @@
 @font-face {
-  font-family: "CallingCodeRegular";
-  src: local("CallingCode-Regular.otf") format("opentype");
+  font-family: "HelveticaLTPro";
+  src: local("HelveticaLTPro-Roman") format("opentype");
+  src: local("HelveticaLTPro-Bold") format("opentype");
+}
+body {
+  font-family: HelveticaLTPro-Bold;
 }
 
-body {
-  font-family: CallingCode-Regular;
+h1 {
+  font-size: 5.1rem;
 }
