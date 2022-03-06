@@ -1,7 +1,8 @@
 @font-face {
   font-family: "HelveticaLTPro";
-  src: local("HelveticaLTPro-Roman") format("opentype");
-  src: local("HelveticaLTPro-Bold") format("opentype");
+  src: local("☺︎");
+  src: url("HelveticaLTPro-Roman") format("opentype"),
+    url("HelveticaLTPro-Bold") format("opentype");
 }
 :root {
   --bg-color-a: #f1f1ef;
