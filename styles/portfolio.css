@@ -6,8 +6,9 @@
 :root {
   --bg-color-a: #f1f1ef;
   --bg-color-b: #fffdfa;
-  --accent-color-a: #6b6b6b;
+  --accent-color-a: #909090;
   --accent-color-b: #f82d0e;
+  --accent-color-c: #040404;
   --default-font-family: HelveticaLTPro-Roman;
 }
 
@@ -22,14 +23,16 @@ body {
 .hero h1 {
   font-size: 2rem;
   text-transform: uppercase;
+  color: var(--accent-color-c);
 }
 .hero h2 {
   font-size: 5rem;
   font-family: HelveticaLTPro-Bold;
   line-height: 0.98;
+  color: var(--accent-color-c);
 }
 .hero p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: HelveticaLTPro-Bold;
   text-transform: uppercase;
   padding-top: 30px;
