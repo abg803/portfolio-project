@@ -72,7 +72,7 @@ hr {
 
 .project-container {
   margin: 0;
-  padding: 0;
+  padding: 0 0 30px 0;
 }
 
 .project-description {
@@ -81,4 +81,29 @@ hr {
 
 img {
   box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+}
+
+@media (max-width: 991px) {
+  h3.project-number {
+    padding-top: 8px;
+    padding-right: 4px;
+  }
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: var(--header-font-size-small);
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: var(--header-font-size-small);
+  }
+  .hero h3 {
+    font-size: var(--header-font-size-small);
+    padding-top: 15px;
+  }
+  .project-container {
+    padding: 0 0 15px 0;
+  }
 }
