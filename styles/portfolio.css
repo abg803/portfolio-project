@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Neue Montreal";
-  src: url("NeueMontreal-Regular.woff") format("truetype");
+  src: url("./fonts/NeueMontreal-Regular.woff") format("truetype");
   font-weight: 450;
 }
 @font-face {
   font-family: "Neue Montreal";
-  src: url("NeueMontreal-Bold.woff") format("truetype");
+  src: url("./fonts/NeueMontreal-Bold.woff") format("truetype");
   font-weight: 800;
 }
 
