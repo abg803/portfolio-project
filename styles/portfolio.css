@@ -1,10 +1,21 @@
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("NeueMontreal-Regular.woff") format("truetype");
+  font-weight: 450;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("NeueMontreal-Bold.woff") format("truetype");
+  font-weight: 800;
+}
+
 :root {
   --bg-color-a: #f1f1ef;
   --bg-color-b: #fffdfa;
   --accent-color-a: #a7a6a6;
   --accent-color-b: #f82d0e;
   --accent-color-c: #040404;
-  --default-font-family: "Public Sans", sans-serif;
+  --default-font-family: NeueMontreal-Regular;
   --header-font-size-xl: 4.768rem;
   --header-font-size-large: 1.953rem;
   --header-font-size-medium: 1.563rem;
