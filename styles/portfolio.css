@@ -97,6 +97,13 @@ hr {
   padding-top: 8px;
 }
 
+.contact-description h3 {
+  text-transform: none;
+  font-family: var(--bold-font-family);
+  font-size: var(--header-font-size-small);
+  padding: 20px 0 40px 0;
+}
+
 @media (max-width: 991px) {
   h3.project-number {
     padding-top: 8px;
