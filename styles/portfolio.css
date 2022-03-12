@@ -21,7 +21,8 @@
   --header-font-size-large: 1.953rem;
   --header-font-size-medium: 1.563rem;
   --header-font-size-small: 1.25rem;
-  --body-font-size: 1 rem;
+  --body-font-size: 1rem;
+  --body-font-size-small: 0.8rem;
 }
 
 body {
@@ -107,6 +108,11 @@ nav a:hover {
   color: var(--accent-color-b);
 }
 
+footer p {
+  margin-top: 60px;
+  font-weight: 800;
+  font-size: var(--body-font-size-small);
+}
 .view-more {
   font-family: "NeueMontreal-Bold";
 }
