@@ -16,6 +16,7 @@
   --accent-color-b: #f82d0e;
   --accent-color-c: #040404;
   --default-font-family: NeueMontreal-Regular;
+  --bold-font-family: NeueMontreal-Bold;
   --header-font-size-xl: 4.768rem;
   --header-font-size-large: 1.953rem;
   --header-font-size-medium: 1.563rem;
@@ -31,29 +32,27 @@ body {
 }
 
 h1 {
-  font-size: var(--header-font-size-medium);
-  text-transform: uppercase;
-}
-h2 {
   font-size: var(--header-font-size-xl);
   font-weight: 600;
   line-height: 0.98;
 }
+h2 {
+  font-size: var(--header-font-size-medium);
+  text-transform: uppercase;
+}
 h3 {
   font-size: var(--header-font-size-medium);
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
 }
 .hero h3 {
   font-size: var(--header-font-size-small);
-  font-weight: 600;
   text-transform: uppercase;
   padding-top: 30px;
   color: var(--accent-color-a);
 }
 h3.project-number {
   color: var(--accent-color-a);
-  padding-right: 4px;
 }
 
 p {
@@ -63,6 +62,10 @@ hr {
   color: var(--accent-color-c);
   opacity: 100;
   display: block;
+}
+
+.view-more {
+  font-family: "NeueMontreal-Bold";
 }
 
 .btn-branding {
@@ -75,12 +78,14 @@ hr {
   padding: 12px;
 }
 
-.project-container {
+.project-container,
+.about-container {
   margin: 0;
   padding: 0 0 30px 0;
 }
 
-.project-description {
+.project-description,
+.about-description {
   padding-top: 8px;
 }
 
@@ -96,10 +101,10 @@ img {
 }
 @media (max-width: 575px) {
   h1 {
-    font-size: var(--header-font-size-small);
+    font-size: 3rem;
   }
   h2 {
-    font-size: 3rem;
+    font-size: var(--header-font-size-small);
   }
   h3 {
     font-size: var(--header-font-size-small);
@@ -108,7 +113,8 @@ img {
     font-size: var(--header-font-size-small);
     padding-top: 15px;
   }
-  .project-container {
+  .project-container,
+  .about-container {
     padding: 0 0 15px 0;
   }
 }
