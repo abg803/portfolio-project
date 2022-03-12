@@ -12,7 +12,7 @@
 :root {
   --bg-color-a: #f1f1ef;
   --bg-color-b: #fffdfa;
-  --accent-color-a: #a7a6a6;
+  --accent-color-a: #bfbdbd;
   --accent-color-b: #f82d0e;
   --accent-color-c: #040404;
   --default-font-family: NeueMontreal-Regular;
@@ -25,7 +25,6 @@
 }
 
 body {
-  background-color: var(--bg-color-b);
   font-family: var(--default-font-family);
   color: var(--accent-color-c);
   padding: 30px;
@@ -37,7 +36,8 @@ h1 {
   line-height: 0.98;
 }
 h2 {
-  font-size: var(--header-font-size-medium);
+  font-family: var(--bold-font-family);
+  font-size: var(--header-font-size-small);
   text-transform: uppercase;
 }
 h3 {
@@ -47,7 +47,7 @@ h3 {
 }
 .hero h3 {
   font-size: var(--header-font-size-small);
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding-top: 30px;
   color: var(--accent-color-a);
 }
@@ -78,6 +78,14 @@ hr {
   padding: 12px;
 }
 
+.website-link {
+  text-decoration: none;
+  color: var(--accent-color-b);
+}
+
+.website-link:hover {
+  color: var(--accent-color-a);
+}
 .project-container,
 .about-container {
   margin: 0;
@@ -87,10 +95,6 @@ hr {
 .project-description,
 .about-description {
   padding-top: 8px;
-}
-
-img {
-  box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
 }
 
 @media (max-width: 991px) {
