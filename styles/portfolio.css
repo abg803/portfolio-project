@@ -51,9 +51,10 @@ h3 {
 .page-container {
   position: relative;
   min-height: 100vh;
+  margin: 0 80px;
 }
 .content-wrap {
-  padding-bottom: 2.5rem;
+  padding-bottom: 30px;
 }
 
 .hero {
@@ -61,7 +62,7 @@ h3 {
 }
 .hero h3 {
   font-size: var(--header-font-size-small);
-  text-transform: capitalize;
+  text-transform: none;
   padding-top: 30px;
   color: var(--accent-color-a);
 }
@@ -104,14 +105,14 @@ nav li {
   font-size: var(--body-font-size);
 }
 
-nav li.active {
-  text-transform: rotate(180deg);
-  color: var(--accent-color-a);
-}
 nav a {
   text-decoration: none;
   color: var(--accent-color-c);
   transition: all 100ms ease-in-out;
+}
+nav a.active {
+  transform: rotate (180deg);
+  color: var(--accent-color-a);
 }
 
 nav a:hover {
@@ -170,12 +171,22 @@ footer p {
 }
 
 @media (max-width: 991px) {
+  .page-container {
+    position: relative;
+    min-height: 100vh;
+    margin: 0 40px;
+  }
   h3.project-number {
     padding-top: 8px;
     padding-right: 4px;
   }
 }
 @media (max-width: 575px) {
+  .page-container {
+    position: relative;
+    min-height: 100vh;
+    margin: 0 20px;
+  }
   h1 {
     font-size: 3rem;
   }
