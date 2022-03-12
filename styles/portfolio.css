@@ -76,6 +76,7 @@ hr {
   cursor: pointer;
   text-transform: uppercase;
   padding: 12px;
+  margin-top: 60px;
 }
 
 .website-link {
@@ -86,8 +87,7 @@ hr {
 .website-link:hover {
   color: var(--accent-color-a);
 }
-.project-container,
-.about-container {
+.content-container {
   margin: 0;
   padding: 0 0 30px 0;
 }
@@ -117,8 +117,10 @@ hr {
     font-size: var(--header-font-size-small);
     padding-top: 15px;
   }
-  .project-container,
-  .about-container {
+  .content-container {
     padding: 0 0 15px 0;
+  }
+  .btn-branding {
+    margin-top: 10px;
   }
 }
