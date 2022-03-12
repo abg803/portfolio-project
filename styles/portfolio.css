@@ -105,18 +105,24 @@ nav li {
   font-size: var(--body-font-size);
 }
 
-nav a {
-  text-decoration: none;
-  color: var(--accent-color-c);
-  transition: all 100ms ease-in-out;
-}
 nav a.active {
-  transform: rotate (180deg);
+  top: -1px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
   color: var(--accent-color-a);
 }
-
 nav a:hover {
   color: var(--accent-color-b);
+}
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  color: var(--accent-color-c);
+  transition: all 100ms ease-in-out;
 }
 
 .view-more {
