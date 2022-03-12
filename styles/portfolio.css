@@ -45,6 +45,9 @@ h3 {
   font-weight: 800;
   text-transform: uppercase;
 }
+.hero {
+  margin-top: 100px;
+}
 .hero h3 {
   font-size: var(--header-font-size-small);
   text-transform: capitalize;
@@ -62,6 +65,46 @@ hr {
   color: var(--accent-color-c);
   opacity: 100;
   display: block;
+}
+.nav-container {
+  padding: 0;
+  margin: 0;
+  max-width: none;
+}
+
+.logo {
+  width: auto;
+  max-width: 100%;
+  max-height: 50px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin-left: 20px;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-weight: 800;
+  font-size: var(--body-font-size);
+}
+
+nav li.active {
+  text-transform: rotate(180deg);
+  color: var(--accent-color-a);
+}
+nav a {
+  text-decoration: none;
+  color: var(--accent-color-c);
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover {
+  color: var(--accent-color-b);
 }
 
 .view-more {
@@ -129,5 +172,9 @@ hr {
   }
   .btn-branding {
     margin-top: 10px;
+  }
+  nav li {
+    margin-left: 10px;
+    font-size: var(--body-font-size);
   }
 }
