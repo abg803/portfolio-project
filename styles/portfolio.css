@@ -79,12 +79,12 @@ hr {
   margin-top: 60px;
 }
 
-.website-link {
+.link {
   text-decoration: none;
   color: var(--accent-color-b);
 }
 
-.website-link:hover {
+.link:hover {
   color: var(--accent-color-a);
 }
 .content-container {
